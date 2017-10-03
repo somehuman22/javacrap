@@ -1,6 +1,8 @@
 public class PiggyBank {
+    //declarations
     private int pennies, nickels, dimes, quarters;
-
+    
+    //constructors
     public PiggyBank(){
         this.quarters = 0;
         this.dimes = 0;
@@ -13,7 +15,8 @@ public class PiggyBank {
         this.nickels = nickels;
         this.pennies = pennies;
     }
-
+    
+    //accessor methods
     public int getQuarters(){
         return this.quarters;
     }
@@ -30,6 +33,7 @@ public class PiggyBank {
         return (this.quarters * 25) + (this.dimes * 10) + (this.nickels * 5) + (this.pennies);
     }
 
+    //add coins
     public void addQuarters(int q){
         this.quarters += q;
     }
