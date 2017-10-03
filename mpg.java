@@ -15,4 +15,9 @@ public class Car {
         this.myGallonsUsed += gallons;
         this.myEndMiles += odometerReading;
     }
+
+    void resetMpg(){
+        this.myGallonsUsed = 0;
+        this.myEndMiles = this.myStartMiles;
+    }
 }
